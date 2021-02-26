@@ -1,0 +1,12 @@
+Programming 
+DSA 
+Networking 
+Linux 
+RHC
+Git 
+IT & Automation 
+Web Development 
+Powershell & Bash
+Angular & Django 
+GATE 
+HW : OCW, Edx, Microsoft 
