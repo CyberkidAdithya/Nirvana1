@@ -157,7 +157,7 @@ import shutil
 import socket
 import time 
 
-import MiniProj_2
+import phase2
 
 #------------------------------------------------------
 
@@ -252,12 +252,12 @@ print("CPU usage : Good") if res1 else print("CPU usage : High")
 time.sleep(1)
 res2 = sysStat.check_connectivity()
 eng2.speak("Network is good") if res2 else eng2.speak("Bad Network")
-print("Network : Good") if res2 else print("Network : Bad")
+print("Network status : Good") if res2 else print("Network status : Bad")
 time.sleep(1)
 res3 = sysStat.check_disk_usage("/")
 eng2.speak("Disk storage looks good") if res3 else eng2.speak("Disk Storage is "
 	+ "running out of space")
-print("Disk Storage : Good") if res3 else print("Disk Storage : "
+print("Disk storage : Good") if res3 else print("Disk storage : "
 	+ "Out of space")
 time.sleep(1)
 res4 = sysStat.check_localhost()
@@ -266,7 +266,7 @@ print("Localhost : Working") if res4 else print("Localhost : Failed")
 time.sleep(1)
 res5 = sysStat.check_memory()
 eng2.speak("Memory is available") if res5 else eng2.speak("Low Memory")
-print("Memory : Available") if res5 else print("Memory : Low Memory")
+print("Free memory : Available") if res5 else print("Free memory : Low")
 
 #----------------------------------------------------------------------
 
@@ -277,7 +277,7 @@ eng2.speak("Why not? So which database would you like me to access Buddy?")
 dBase = input("Enter your Database name or just say it :P I am listening...\n")
 if dBase == "SQL": 
 	eng2.speak("Logging into your SQL database.")
-	app = MiniProj_2.StudentApp()
+	app = phase2.DesktopApp()
 	app.mainloop()
 	eng2.speak("Saving changes to your Database.")
 else:
