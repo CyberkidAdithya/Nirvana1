@@ -10,3 +10,9 @@ Powershell & Bash
 Angular & Django 
 GATE 
 HW : OCW, Edx, Microsoft 
+
+
+
+# Added Voice 
+# Added Database
+# Need to add OpenCV
