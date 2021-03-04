@@ -44,7 +44,7 @@ class DesktopApp(tk.Tk):	#root class
 		self.entMemo = tk.Entry(self)
 		self.entSearch = tk.Entry(self)
 
-		self.entDate = DateEntry(self, width=12, background='darkblue', foreground='white', borderwidth=2, year=2021,locale='en_US', date_pattern='dd-mm-y')
+		self.entDate = DateEntry(self, width=12, background='darkblue', foreground='white', borderwidth=2, year=2021,locale='en_US', date_pattern='y-mm-dd')
 
 
 		#BUTTONS
